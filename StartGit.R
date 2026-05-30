@@ -3,11 +3,12 @@
 library(usethis)
 
 
-use_git_config(
-  user.name = "Mohammad Safaei",
+usethis::use_git_config(
+  user.name = "safaei-Mo",
   user.email = "safaei.mo@ufl.edu"
 )
 
+usethis::git_sitrep()
 #creating git credentials
 
 #Instructions from this website:
@@ -30,8 +31,13 @@ usethis::create_github_token()
 #if you navigate away from this, you will never see it again!
 
 #2. Run the following lines
-install.packages("gitcreds")
+#install.packages("gitcreds")
 library(gitcreds)
 gitcreds_set()
-#paste your personal access token
+2#paste your personal access token
 gitcreds_get()
+
+
+usethis::git_sitrep()
+
+
